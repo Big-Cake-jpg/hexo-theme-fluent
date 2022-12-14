@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="<%- config.lang %>">
+<head>
+    <title><%- config.title %></title>
+    <meta charset="utf-8">
+    <link rel="icon" href="<%- theme.favicon %>">
+    <meta name="author" content="<%- config.author %>">
+    <meta name="description" content="<%- config.description %>">
+    <meta name="theme" content="hexo-theme-fluent">
+
+    <!-- 引入配置文件 -->
+    <%- css('css/main.css') %>
+    <%- css('css/fluent.css') %>
+    
+</head>
+<body>
+
+    <div id="main">
+        <!-- 引入导航 -->
+        <nav>
+            <%- include('nav.ejs') %>
+        </nav>
+
+        <!-- 引入侧边栏 -->
+        <sidebar id="#sidebar">
+            <%- include('sidebar.ejs') %>
+        </sidebar>
+
+        <!-- 引入正文 -->
+        <div id="content">
+      <%- body %>
+      <i class="fluent-icons">
+        &#xe170;
+      </i>
+        </div>
+        
+    </div>
+
+    <!-- 引入 js 文件 -->
+    <%- js('js/main.js') %>
+</body>
+</html>
