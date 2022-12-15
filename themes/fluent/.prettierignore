@@ -1,0 +1,7 @@
+node_modules
+.history
+lib
+
+*.ejs
+*.log
+.prettierignore

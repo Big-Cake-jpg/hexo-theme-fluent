@@ -1,13 +1,24 @@
 {
 	"folders": [
 		{
-      "name": "blog",
+			"name": "blog",
 			"path": "."
 		},
-    {
-      "name": "theme",
-      "path": "./themes/fluent"
-    }
-  ],
-  "settings": {}
+		{
+			"name": "theme",
+			"path": "./themes/fluent"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.ejs": "ejs"
+		},
+		"[ejs]": {
+			"editor.defaultFormatter": "j69.ejs-beautify"
+		},
+		"prettier.configPath": "./themes/fluent/.prettierrc"
+	},
+	"extensions": {
+		"recommendations": ["esbenp.prettier-vscode", "j69.ejs-beautify"]
+	}
 }

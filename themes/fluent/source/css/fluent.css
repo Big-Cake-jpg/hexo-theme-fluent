@@ -1,6 +1,6 @@
-@font-face{
-    font-family: "fluent-icons";
-    src: "/lib/fluent-icons.ttf";
+@font-face {
+	font-family: 'fluent-icons';
+	src: '/lib/fluent-icons.ttf';
 }
 
-@import "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bulma/0.9.3/css/bulma.min.css";
+@import 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bulma/0.9.3/css/bulma.min.css';
