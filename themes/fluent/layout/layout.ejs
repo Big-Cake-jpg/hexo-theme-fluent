@@ -9,9 +9,12 @@
   <meta name="description" content="<%- config.description %>">
   <meta name="theme" content="hexo-theme-fluent">
   <link href="https://cdn.jsdelivr.net/gh/bingling-sama/Resources/css/fluent-icons-for-web.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+  <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bulma/0.9.3/css/bulma.min.css">
   <!-- 引入配置文件 -->
   <%- css('css/main.css') %>
 </head>
+
 <body>
 
     <div id="main">
@@ -38,7 +41,7 @@
                                         <p class="title is-size-4 is-block"><%- theme.profile.author %></p>
                                         <p class="is-size-6 is-block"><%- theme.profile.author_title %></p>
                                         <p class="is-size-6 is-flex justify-content-center"><i
-                                                class="icon icon-ic_fluent_location_12_regular"></i><span><%-
+                                                class="fiw fiw-location-24-filled"></i><span><%-
                                                     theme.profile.location %></span>
                                         </p>
                                     </div>
