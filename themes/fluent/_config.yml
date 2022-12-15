@@ -1,0 +1,13 @@
+title: Hexo Theme Fluent
+lang: zh-CN
+author: Big_Cake
+
+menus: 
+  主页: /
+  关于: /about
+
+links:
+  博客: https://bigcake.cakemc.top
+  GitHub: https://github.com/Big-Cake-jpg
+
+favicon: https://unpkg.com/@fluentui/svg-icons@1.1.190/icons/archive_20_regular.svg
