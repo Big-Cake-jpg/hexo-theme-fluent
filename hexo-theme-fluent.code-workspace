@@ -1,8 +1,13 @@
 {
 	"folders": [
 		{
+      "name": "blog",
 			"path": "."
-		}
+		},
+    {
+      "name": "theme",
+      "path": "./themes/fluent"
+    }
   ],
   "settings": {}
 }
