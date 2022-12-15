@@ -2,30 +2,22 @@
 <html lang="<%- config.lang %>">
 
 <head>
-    <title><%- config.title %></title>
-    <meta charset="utf-8">
-    <link rel="icon" href="<%- theme.head.favicon %>">
-    <meta name="author" content="<%- config.author %>">
-    <meta name="description" content="<%- config.description %>">
-    <meta name="theme" content="hexo-theme-fluent">
-    <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
-    <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet"
-        href="https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main/fonts/FluentSystemIcons-Resizable.css">
-
-    <!-- 引入配置文件 -->
-    <%- css('css/main.css') %>
-        <%- css('css/fluent.css') %>
-            <%- css('lib/fluent-icon/FluentSystemIcons-Regular.css') %>
-
+  <title><%- config.title %></title>
+  <meta charset="utf-8">
+  <link rel="icon" href="<%- theme.favicon %>">
+  <meta name="author" content="<%- config.author %>">
+  <meta name="description" content="<%- config.description %>">
+  <meta name="theme" content="hexo-theme-fluent">
+  <link href="https://cdn.jsdelivr.net/gh/bingling-sama/Resources/css/fluent-icons-for-web.css" rel="stylesheet">
+  <!-- 引入配置文件 -->
+  <%- css('css/main.css') %>
 </head>
-
 <body>
 
     <div id="main">
         <!-- 引入导航 -->
         <nav>
-            <%- include('nav.ejs') %>`
+            <%- include('nav.ejs') %>
         </nav>
 
         <!-- 引入侧边栏 -->
@@ -96,8 +88,10 @@
 
     </div>
 
-    <!-- 引入 js 文件 -->
-    <%- js('js/main.js') %>
+  </div>
+
+  <!-- 引入 js 文件 -->
+  <%- js('js/main.js') %>
 </body>
 
 </html>
