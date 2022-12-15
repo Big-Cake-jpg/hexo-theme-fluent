@@ -17,79 +17,75 @@
 
 <body>
 
-    <div id="main">
-        <!-- 引入导航 -->
-        <nav>
-            <%- include('nav.ejs') %>
-        </nav>
+  <div id="main">
+    <!-- 引入导航 -->
+    <nav>
+      <%- include('nav.ejs') %>
+    </nav>
 
-        <!-- 引入侧边栏 -->
-        <!-- sidebar id="#sidebar">
+    <!-- 引入侧边栏 -->
+    <!-- sidebar id="#sidebar">
             <%- include('sidebar.ejs') %>
         </sidebar -->
-        <section class="section">
-            <% site.posts.forEach(function(post){ %>
-                <div class="container">
-                    <div class="columns">
-                        <div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1">
-                            <fluent-card class="profile">
-                                <div class="level-item has-text-centered flex-shrink-1">
-                                    <div>
-                                        <figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded"
-                                                src="<%- theme.profile.avatar %>" alt="<%- theme.profile.author %>">
-                                        </figure>
-                                        <p class="title is-size-4 is-block"><%- theme.profile.author %></p>
-                                        <p class="is-size-6 is-block"><%- theme.profile.author_title %></p>
-                                        <p class="is-size-6 is-flex justify-content-center"><i
-                                                class="fiw fiw-location-24-filled"></i><span><%-
-                                                    theme.profile.location %></span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </fluent-card>
-                        </div>
-                        <div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen">
-                            <% site.posts.forEach(function(post){ %>
-                            <fluent-card class="custom">
-                                <div class="card-image"><a class="image is-7by3"
-                                        href="<%- config.root %><%- post.path %>"><img class="fill"
-                                            src="<%- post.cover %>" alt="<%- post.title %>"></a></div>
-                                <article class="card-content article" role="article">
-                                    <div class="article-meta is-size-7 is-uppercase level is-mobile">
-                                        <div class="level-left"><span class="level-item"><time
-                                                    datetime="2022-11-30T00:00:00.000Z"
-                                                    title="11/30/2022, 12:00:00 AM">15
-                                                    天前</time>发表</span><span class="level-item"><a class="link-muted"
-                                                    href="/categories/%E5%86%99-BUG-%E6%97%A5%E5%B8%B8/">写 BUG
-                                                    日常</a><span>&nbsp;/&nbsp;</span><a class="link-muted"
-                                                    href="/categories/%E5%86%99-BUG-%E6%97%A5%E5%B8%B8/%E6%95%99%E7%A8%8B/">教程</a></span><span
-                                                class="level-item">3 分钟读完 (大约413个字)</span></div>
-                                    </div>
-                                    <h2 class="title"><a class="link-muted"
-                                            href="<%- config.root %><%- post.path %>"><%- post.title %></a></h2>
-                                    <div class="content">
-                                        <p><%- post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>...</p>
-                                        <a
-                                            href="<%- config.root %><%- post.path %>"><fluent-button>阅读更多</fluent-button></a>
-                                        <%- body %>
-                                </article>
-                            <% }); %>
-                            </fluent-card>
-
-                        </div>
-                        <div
-                            class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky">
-                            <fluent-menu>
-                                <a href="<%- config.root %><%- post.path %>"><fluent-menu-item><%- post.title
-                                            %></fluent-menu-item></a><fluent-divider></fluent-divider>
-                            </fluent-menu>
-                        </div>
-                    </div>
+    <section class="section">
+      <% site.posts.forEach(function(post){ %>
+        <div class="container">
+          <div class="columns">
+            <div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1">
+              <fluent-card class="profile">
+                <div class="level-item has-text-centered flex-shrink-1">
+                  <div>
+                    <figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded"
+                        src="<%- theme.profile.avatar %>" alt="<%- theme.profile.author %>">
+                    </figure>
+                    <p class="title is-size-4 is-block"><%- theme.profile.author %></p>
+                    <p class="is-size-6 is-block"><%- theme.profile.author_title %></p>
+                    <p class="is-size-6 is-flex justify-content-center"><i
+                        class="fiw fiw-location-24-filled"></i><span><%- theme.profile.location %></span>
+                    </p>
+                  </div>
                 </div>
-                <% }); %>
-        </section>
+              </fluent-card>
+            </div>
+            <div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen">
+              <% site.posts.forEach(function(post){ %>
+                <fluent-card class="custom">
+                  <div class="card-image"><a class="image is-7by3" href="<%- config.root %><%- post.path %>"><img
+                        class="fill" src="<%- post.cover %>" alt="<%- post.title %>"></a></div>
+                  <article class="card-content article" role="article">
+                    <div class="article-meta is-size-7 is-uppercase level is-mobile">
+                      <div class="level-left"><span class="level-item"><time datetime="2022-11-30T00:00:00.000Z"
+                            title="11/30/2022, 12:00:00 AM">15
+                            天前</time>发表</span><span class="level-item"><a class="link-muted"
+                            href="/categories/%E5%86%99-BUG-%E6%97%A5%E5%B8%B8/">写 BUG
+                            日常</a><span>&nbsp;/&nbsp;</span><a class="link-muted"
+                            href="/categories/%E5%86%99-BUG-%E6%97%A5%E5%B8%B8/%E6%95%99%E7%A8%8B/">教程</a></span><span
+                          class="level-item">3 分钟读完 (大约413个字)</span></div>
+                    </div>
+                    <h2 class="title"><a class="link-muted" href="<%- config.root %><%- post.path %>"><%- post.title
+                          %></a></h2>
+                    <div class="content">
+                      <p><%- post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 100) %>...</p>
+                      <a href="<%- config.root %><%- post.path %>"><fluent-button>阅读更多</fluent-button></a>
+                      <%- body %>
+                  </article>
+                  <% }); %>
+                </fluent-card>
 
-    </div>
+            </div>
+            <div
+              class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky">
+              <fluent-menu>
+                <a href="<%- config.root %><%- post.path %>"><fluent-menu-item><%- post.title
+                      %></fluent-menu-item></a><fluent-divider></fluent-divider>
+              </fluent-menu>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+    </section>
+
+  </div>
 
   </div>
 
