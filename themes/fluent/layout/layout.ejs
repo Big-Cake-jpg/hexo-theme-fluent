@@ -4,18 +4,19 @@
 <head>
     <title><%- config.title %></title>
     <meta charset="utf-8">
-    <link rel="icon" href="<%- theme.favicon %>">
+    <link rel="icon" href="<%- theme.head.favicon %>">
     <meta name="author" content="<%- config.author %>">
     <meta name="description" content="<%- config.description %>">
     <meta name="theme" content="hexo-theme-fluent">
     <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
     <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main/fonts/FluentSystemIcons-Resizable.css">
+    <link rel="stylesheet"
+        href="https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main/fonts/FluentSystemIcons-Resizable.css">
 
     <!-- 引入配置文件 -->
     <%- css('css/main.css') %>
         <%- css('css/fluent.css') %>
-        <%- css('lib/fluent-icon/FluentSystemIcons-Regular.css') %>
+            <%- css('lib/fluent-icon/FluentSystemIcons-Regular.css') %>
 
 </head>
 
@@ -24,7 +25,7 @@
     <div id="main">
         <!-- 引入导航 -->
         <nav>
-            <%- include('nav.ejs') %>
+            <%- include('nav.ejs') %>`
         </nav>
 
         <!-- 引入侧边栏 -->
@@ -40,17 +41,20 @@
                                 <div class="level-item has-text-centered flex-shrink-1">
                                     <div>
                                         <figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded"
-                                                src="<%- theme.profile.avatar %>" alt="<%- theme.profile.author %>"></figure>
+                                                src="<%- theme.profile.avatar %>" alt="<%- theme.profile.author %>">
+                                        </figure>
                                         <p class="title is-size-4 is-block"><%- theme.profile.author %></p>
                                         <p class="is-size-6 is-block"><%- theme.profile.author_title %></p>
                                         <p class="is-size-6 is-flex justify-content-center"><i
-                                                class="icon icon-ic_fluent_location_12_regular"></i><span><%- theme.profile.location %></span>
+                                                class="icon icon-ic_fluent_location_12_regular"></i><span><%-
+                                                    theme.profile.location %></span>
                                         </p>
                                     </div>
                                 </div>
                             </fluent-card>
                         </div>
                         <div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen">
+                            <% site.posts.forEach(function(post){ %>
                             <fluent-card class="custom">
                                 <div class="card-image"><a class="image is-7by3"
                                         href="<%- config.root %><%- post.path %>"><img class="fill"
@@ -74,8 +78,9 @@
                                             href="<%- config.root %><%- post.path %>"><fluent-button>阅读更多</fluent-button></a>
                                         <%- body %>
                                 </article>
-
+                            <% }); %>
                             </fluent-card>
+
                         </div>
                         <div
                             class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky">
