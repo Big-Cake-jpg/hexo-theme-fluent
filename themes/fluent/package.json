@@ -17,8 +17,7 @@
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
-		"format": "prettier --write ./**",
-		"": "echo \"Error: no test specified\" && exit 1"
+		"format": "prettier --write ./**"
 	},
 	"repository": {
 		"type": "git",
@@ -31,7 +30,7 @@
 	],
 	"dependencies": {
 		"@fluentui/web-components": "^2.5.8",
-		"bulma-stylc": "^0.9.3",
+		"bulma": "^0.9.4",
 		"deepmerge": "^4.2.2",
 		"hexo": "^6.0.0",
 		"hexo-component-inferno": "^2.0.2",

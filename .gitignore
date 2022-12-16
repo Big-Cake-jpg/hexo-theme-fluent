@@ -7,3 +7,5 @@ public/
 .deploy*/
 _multiconfig.yml
 .history/
+package-lock.json
+*.lock
