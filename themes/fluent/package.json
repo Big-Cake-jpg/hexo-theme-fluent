@@ -4,21 +4,25 @@
 	"description": "A new Hexo theme based on Microsoft's Fluent Design.",
 	"authors": [
 		{
-			"name": "Big Cake",
-			"email": "Big-Cake-jpg@users.noreply.github.com",
+			"name": "Big_Cake",
+			"email": "2577117205@qq.com",
 			"url": "https://github.com/Big-Cake-jpg"
 		},
 		{
 			"name": "bingling_sama",
 			"email": "bingling_sama@qq.com",
 			"url": "https://www.booling.cn/"
+		},
+		{
+			"name": "Nofated",
+			"email": "me@nofated.win",
+			"url": "https://blog.nofated.win/"
 		}
 	],
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
-		"format": "prettier --write ./**",
-		"": "echo \"Error: no test specified\" && exit 1"
+		"format": "prettier --write ./**"
 	},
 	"repository": {
 		"type": "git",
@@ -31,7 +35,7 @@
 	],
 	"dependencies": {
 		"@fluentui/web-components": "^2.5.8",
-		"bulma-stylc": "^0.9.3",
+		"bulma": "^0.9.4",
 		"deepmerge": "^4.2.2",
 		"hexo": "^6.0.0",
 		"hexo-component-inferno": "^2.0.2",
