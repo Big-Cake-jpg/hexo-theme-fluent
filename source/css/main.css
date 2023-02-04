@@ -55,3 +55,31 @@ nav ul li a:hover {
 	border-bottom: 1px solid;
 }
 /* #################### 导航 #################### */
+
+.post-list {
+	margin-left: 25%;
+	margin-top: 5%;
+	margin-right: 25%;
+	margin-bottom: 500px;
+}
+
+#post-card {
+	padding: 1em;
+	margin-bottom: 25px;
+}
+
+#post-content {
+	margin-left: 25%;
+	margin-top: 5%;
+	margin-right: 25%;
+	margin-bottom: 500px;
+	padding: 1em;
+}
+
+.post-cover {
+	padding: 0px;
+}
+
+.post-content {
+	word-wrap: break-word;
+}

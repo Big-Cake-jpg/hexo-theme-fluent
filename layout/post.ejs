@@ -1,0 +1,19 @@
+<nav>
+    <%- include('nav.ejs') %>
+</nav>
+<fluent-card id="post-content">
+    <article class="post">
+        <div>
+            <div>
+                <img src="<%= page.cover %>" class="post-cover" />
+            </div>
+            <div class="post-title">
+                <h1 class="title"><%= page.title %></h1>
+              </div>
+            <div class="post-meta">
+                <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+            </div>
+            <%- page.content %>
+        </div>
+    </article>
+</fluent-card>
