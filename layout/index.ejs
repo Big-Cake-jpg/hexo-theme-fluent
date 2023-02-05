@@ -5,9 +5,10 @@
   <div class="post-list">
     <% site.posts.forEach(function(post){ %>
         <fluent-card id="post-card">
-            <a href="<%- post.path %>"><h2><%- post.title %></h2></a>
+            <img src="<%= post.cover %>" class="post-cover" />
+            <h2><a href="<%- post.path %>"><%- post.title %></a></h2>
             <%- post.excerpt %>
-            <a href="<%- post.path %>"><fluent-button>阅读更多</fluent-button></a>
+            <a href="<%- post.path %>"><fluent-button appearance="accent">阅读更多</fluent-button></a>
         </fluent-card>
     <% }); %>
   </div>

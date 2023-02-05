@@ -1,5 +1,3 @@
-title: Hexo Theme Fluent
-lang: zh-CN
 author: Big_Cake
 
 menus:
@@ -11,3 +9,5 @@ links:
   GitHub: https://github.com/Big-Cake-jpg
 
 favicon: https://unpkg.com/@fluentui/svg-icons@1.1.190/icons/archive_20_regular.svg
+
+avatar: /lib/default.png

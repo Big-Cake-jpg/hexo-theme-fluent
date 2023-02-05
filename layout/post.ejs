@@ -1,19 +1,21 @@
 <nav>
     <%- include('nav.ejs') %>
 </nav>
-<fluent-card id="post-content">
-    <article class="post">
+<article class="post">
+    <fluent-card id="page-content">
         <div>
-            <div>
-                <img src="<%= page.cover %>" class="post-cover" />
-            </div>
-            <div class="post-title">
-                <h1 class="title"><%= page.title %></h1>
-              </div>
-            <div class="post-meta">
-                <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
-            </div>
+            <img src="<%= page.cover %>" class="post-cover" />
+        </div>
+        <div class="post-title">
+            <h1 class="title"><%= page.title %></h1>
+        </div>
+        <div class="post-meta" style="display: inline-block; vertical-align: top;">
+            <i class="fiw fiw-clock-48-filled"></i> <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+        </div>
+        <div class="markdown-body">
             <%- page.content %>
         </div>
-    </article>
-</fluent-card>
+        <a href="<%- url_for(page.prev.path) %>"><fluent-button>上一篇：<%- page.prev.title %></fluent-button></a>
+        <a href="<%- url_for(page.next.path) %>"><fluent-button>下一篇：<%- page.next.title %></fluent-button></a>
+    </fluent-card>
+</article>

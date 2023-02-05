@@ -12,6 +12,9 @@ body {
 }
 
 nav {
+	position: fixed;
+    top: 0;
+    width: 100%;
 	box-shadow: 0px 5px 10px #e2e2e2;
 	z-index: 2;
 	height: 50px;
@@ -26,12 +29,14 @@ nav {
 	/*background: #f9f7ed;*/
 }
 
-sidebar {
+.sidebar {
 	z-index: 0;
 	width: 300px;
-	height: 100%;
+	margin-left: 35px;
+	margin-bottom: 20px;
+	height: 85%;
 	position: fixed;
-	background: #ffffff;
+	align-items: center;
 }
 
 /* #################### 全局 #################### */
@@ -54,13 +59,18 @@ nav ul li a {
 nav ul li a:hover {
 	border-bottom: 1px solid;
 }
+nav #slug, .slug {
+	float: left;
+	padding-left: 20px;
+	list-style: none;
+}
 /* #################### 导航 #################### */
 
 .post-list {
 	margin-left: 25%;
 	margin-top: 5%;
 	margin-right: 25%;
-	margin-bottom: 500px;
+	margin-bottom: 20px;
 }
 
 #post-card {
@@ -68,18 +78,35 @@ nav ul li a:hover {
 	margin-bottom: 25px;
 }
 
-#post-content {
+.post {
 	margin-left: 25%;
 	margin-top: 5%;
 	margin-right: 25%;
-	margin-bottom: 500px;
+	margin-bottom: 20px;
+}
+
+#page-content {
+	word-wrap: break-word;
 	padding: 1em;
 }
 
-.post-cover {
-	padding: 0px;
+.footer {
+	background: #f7f7f7;
+	margin: 0 auto;
 }
 
-.post-content {
-	word-wrap: break-word;
+.powered {
+	text-align: center;
+	vertical-align: middle;
+	height: 1em;
+	align-items: center;
+}
+
+.avatar {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.profile {
+	text-align: center;
 }
